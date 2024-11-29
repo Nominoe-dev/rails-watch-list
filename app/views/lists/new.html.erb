@@ -1,4 +1,10 @@
-<%= simple_form_for(@list) do |f| %>
-  <%= f.input :name %>
-  <%= f.submit %>
-<% end %>
+  <div>
+    <%= link_to "Back", lists_path, class: "btn btn-secondary btn-sm p-3 rounded-5 m-3" %>
+  </div>
+
+<div class="container bg-primary p-3 rounded-10">
+  <%= simple_form_for(@list) do |f| %>
+    <%= f.input :name %>
+    <%= f.submit %>
+  <% end %>
+</div>
